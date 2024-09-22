@@ -3,7 +3,6 @@ import { NavAuth, NavUser } from "./index";
 import "./navbar.scss";
 
 import logo from "../../assets/Navbar/Instagram Logo.svg";
-import { Input } from "../Forms";
 
 const Navbar = () => {
   const isAuth = false;
@@ -14,12 +13,6 @@ const Navbar = () => {
           <div className="navbar-logo">
             <img src={logo} alt="" />
           </div>
-          <form
-            action="
-          "
-          >
-            <Input placeholder="Search"/>
-          </form>
 
           {isAuth ? <NavAuth /> : <NavUser />}
         </div>

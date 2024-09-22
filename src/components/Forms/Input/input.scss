@@ -26,14 +26,14 @@
 
   &_input {
     input {
-      width: 398px;
-      // width: 100%;
+      // width: 398px;
+      width: 100%;
 
       padding: 13px 15px;
-      background: $gray_200;
+      // background: $gray_200;
 
       border-radius: 5px;
-      border: 1px solid transparent;
+      border: 1px solid  $gray_200;
       transition: all 0.2s;
 
       color: #000;
@@ -45,6 +45,11 @@
       &:focus {
         background: #fff;
         border: 1px solid $pink_900;
+
+
+        &:active{
+          border: none;
+        }
       }
     }
 

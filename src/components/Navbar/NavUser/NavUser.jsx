@@ -1,5 +1,4 @@
 import React from "react";
-import { Input } from "../../Forms";
 import { Link } from "react-router-dom";
 import "./navList.scss";
 
@@ -9,10 +8,14 @@ import explore from "../../../assets/Navbar/explore.svg";
 import addPost from "../../../assets/Navbar/AddPost.svg";
 import faworites from "../../../assets/Navbar/favorite.svg";
 import profile from "../../../assets/Navbar/Profil.svg";
+import { Button, Input } from "../../Forms";
 
 const NavUser = () => {
   return (
     <div className="navUser">
+        <form className="navUser-form">
+          <Input placeholder="Search" />
+        </form>
       <ul className="navUser-list">
         <li className="navUser-list-li">
           <Link to="/">

@@ -1,10 +1,18 @@
 .navUser {
-
+  display: flex;
+  align-items: center;
+  gap: 108px;
+  &-form {
+    width: 398px;
+  }
 
   &-list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 24px;
+
+    &-li {
+    }
   }
 }

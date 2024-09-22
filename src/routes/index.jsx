@@ -6,6 +6,8 @@ import { Explore } from "../pages/Explore";
 import { AddPost } from "../pages/AddPost";
 import { Favorite } from "../pages/Favorites";
 import { Profile } from "../pages/Profile";
+import { Register } from "../pages/Register";
+import { Login } from "../pages/Login";
 
 export const Routing = () => {
   const element = useRoutes([
@@ -34,13 +36,21 @@ export const Routing = () => {
           element: <Favorite />,
         },
         {
+          path: "Login",
+          element: <Login />,
+        },
+        {
+          path: "Register",
+          element: <Register />,
+        },
+        {
           path: "Profile",
           element: <Profile />,
         },
-        // {
-        //   path: "*",
-        //   element: <Navigate to="/" replace />,
-        // },
+        {
+          path: "*",
+          element: <Navigate to="/" replace />,
+        },
       ],
     },
   ]);
