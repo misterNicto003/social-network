@@ -1,0 +1,6 @@
+.Burger {
+    width: 30px;
+    height: 30px;
+    background-image: url(/src/assets/HeaderLogo/burger_menu.svg);
+    background-size: contain;
+}
