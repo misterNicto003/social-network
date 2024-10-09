@@ -4,6 +4,10 @@ import { useState } from 'react'
 import styles from "./Header.module.css"
 import { HeaderNav } from './HeaderNav'
 export const Header = () => {
+    const [burger,setBurger] = useState(true)
+    const burgerClick = () => {
+        setBurger(!burger)
+    }
     // const [burger,setBurger] = useState(false)
     // function burgerClick () {
     //     setBurger(!burger)
