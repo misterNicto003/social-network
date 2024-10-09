@@ -1,21 +1,18 @@
 import { useState } from 'react'
 
-import { Burger } from './Burger'
+// import { Burger } from './Burger'
 import styles from "./Header.module.css"
 import { HeaderNav } from './HeaderNav'
 export const Header = () => {
-    const [burger,setBurger] = useState(false)
-    function burgerClick () {
-        setBurger(!burger)
-    }
+    // const [burger,setBurger] = useState(false)
+    // function burgerClick () {
+    //     setBurger(!burger)
+    // }
   return (
     <div className={styles.Header}>
-        <div>CarRent</div>
+        <div><h2>CARENT</h2></div>
         <div>
-        <Burger burgerClick={burgerClick}/>
-        <div className={burger ? styles.headerNav : styles.headerNavActive}>
-        {burger ? false : <HeaderNav/>}
-        </div>
+          <HeaderNav/>
         </div>
     </div>
   )

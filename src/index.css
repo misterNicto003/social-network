@@ -13,6 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -24,14 +29,8 @@ a:hover {
 
 body {
   margin: 0;
-
-
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
 button {
   border-radius: 8px;
@@ -44,9 +43,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

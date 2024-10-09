@@ -1,31 +1,22 @@
-.Header {
-    height: 50px;
-    background-color: rgb(46, 46, 46);
-    color: white;
+ .Header {
+    height: 120px;
     display: flex;
-    justify-content: space-between;
-    padding-inline: 10px;
+    justify-content: space-around;
     align-items: center;
-    font-size: 25px;
+    padding-inline: 10px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-size: 18px;
     font-weight: bold;
-    font-family: monospace;
 }
-.headerNav {
-    position: absolute;
-    right:0;
-    top: 11px;
-    transform-origin: top;
-    transform: scaleY(0);
-    transition: 0.3s;
-    height: 0px;
 
-}
-.headerNavActive {
+.Header h2 {
     position: absolute;
-    right: 0;
-    top: 11px;
-    transform-origin: top;
-    transform: scaleY(1);
-    transition: 0.3s;
-    height: 0px;
+    top: -5px;
+    margin-left: 160px;
+    color: #FE8400;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: "Itim", cursive;
+    z-index: 1;
 }
