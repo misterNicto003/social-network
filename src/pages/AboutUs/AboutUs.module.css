@@ -1,0 +1,55 @@
+.div {
+    background-color: white;
+    height: 90vh;
+}
+
+.aboutTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutTitle h1{
+    color: black;
+    letter-spacing: 2px;
+    font-family: "Itim", cursive;
+    position: relative;
+}
+.aboutTitle h1::after {
+    content: '';
+    display: block;
+    bottom: 0; 
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #FE8400;
+}
+
+.aboutMain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.aboutMainLeft img{
+    width: 780px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.aboutMainRight {
+    width: 780px;
+    margin-top: 30px;
+}
+.aboutMainRight p {
+    width: 650px;;
+    color: black;
+    font-size: 23px;
+    font-weight: 600;
+}
+.aboutMainRight h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FE8400;
+}

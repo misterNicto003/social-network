@@ -1,0 +1,99 @@
+.homeParent {
+    width: 100%;
+    height: 87.2vh;
+    background-color: white;
+}
+
+.mainLeft {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 45%;
+    background-color: black;
+}
+
+.mainLeftIcons {
+    position: absolute;
+    top: 27%;
+}
+.mainLeftIcons img {
+    height: 23px;
+}
+
+.mainLeftIcons ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mainLeftIcons ul::before {
+    content: '';
+    height: 80px;
+    width: 3px;
+    display: block;
+    margin: auto;
+    background-color: #FE8400;
+}
+.mainLeftIcons ul::after {
+    content: '';
+    height: 80px;
+    width: 3px;
+    display: block;
+    margin: auto;
+    background-color: #FE8400;
+}
+.mainLeftIcons ul li {
+    list-style: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.mainLeftIcons ul li:hover {
+    transform: scale(1.2);
+}
+
+.mainLeftSection {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    padding: 0px 20px 20px 0px;
+    background-color: rgba(0, 0, 0, 0.227);
+    border-radius: 10px;
+    width: 528px;
+    height: 485px;
+    left: 400px;
+    top: 200px;
+}
+.mainLeftSection h1 {
+    font-size: 52px;
+    font-weight: 800;
+    font-family: "Varela Round", sans-serif;
+}
+
+.mainLeftSection p {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Varela Round", sans-serif;
+    padding: 0px 80px 30px 0px;
+}
+
+.mainLeftSection button {
+    width: 250px;
+    height: 59px;
+    font-size: 21px;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 1px;
+    background-color: #FE8400;
+    color: black;
+}
+.mainLeftSection button:hover {
+    background-color: white;
+    border: none;
+}
+
+.mainRight img{
+    height: 690px;
+    width: 1180px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+}
