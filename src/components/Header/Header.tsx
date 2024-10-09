@@ -4,8 +4,8 @@ import { Burger } from './Burger'
 import styles from "./Header.module.css"
 import { HeaderNav } from './HeaderNav'
 export const Header = () => {
-    const [burger,setBurger] = useState(false)
-    function burgerClick () {
+    const [burger,setBurger] = useState(true)
+    const burgerClick = () => {
         setBurger(!burger)
     }
   return (
