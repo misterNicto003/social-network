@@ -3,6 +3,6 @@ import { FormRegister } from '../../components/Forms/FormAuth/FormRegister'
 
 export const Profile = () => {
   return (
-    <div><FormRegister/></div>
+    <div>Профиль</div>
   )
 }

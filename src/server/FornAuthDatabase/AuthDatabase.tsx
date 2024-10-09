@@ -4,7 +4,7 @@ export default async function writeUserData(regUser) {
  
       console.log(regUser)
       const db = getDatabase();
-      const userRef = ref(db, `/authUsers/${regUser.username}`);
+      const userRef = ref(db, `/authUsers/users`);
     
       try {
         // Получаем существующие сообщения

@@ -1,7 +1,8 @@
 import React from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form';
 import writeUserData from '../../../server/FornAuthDatabase/AuthDatabase';
-
+import { Link } from 'react-router-dom';
+import styles from "./FormAuth.module.css"
 interface RegForm {
   username: string;
   phone: number;
@@ -18,11 +19,27 @@ export const FormRegister = () => {
     writeUserData(data)
   }
   return (
-    <form onSubmit={handleSubmit(submit)}>
-      <input type="text" {...register('username', {required: true})}/>
-      <input type="number" {...register('phone', {required: true})}/>
-      <input type="password" {...register('password', {required: true})}/>
-      <button>Отправить</button>
+    <div className={styles.authForm}>
+
+    <form className={styles.formContain} onSubmit={handleSubmit(submit)}>
+    <div>
+      <label htmlFor="login">Логин</label>
+      <input type="text" {...register('username', {required: true})} name='login' placeholder='Введите логин'/>
+      </div>
+      <div>
+      <label htmlFor="phone">Телефон</label>
+      <input type="number" {...register('phone', {required: true})} name='phone' placeholder='+7***-**-**'/>
+      </div>
+      <div>
+        <label htmlFor="pass">Пароль</label>
+      <input type="password" {...register('password', {required: true})} name='pass' placeholder='Введите пароль'/>
+      </div>
+      <button>Зарегистрироваться</button>
+     
     </form>
+    <p>
+Есть аккаунт? <Link to='/'>Войди</Link>
+    </p>
+    </div>
   )
 }

@@ -1,0 +1,24 @@
+.authForm {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.authForm button {
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+    background-color: #797979;
+}
+.formContain {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 3px solid black;
+    border-color: #ffa835;
+    padding: 20px;
+    border-radius: 15px;
+}
+.formContain div {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { Profile } from '../pages/Profile/Profile'
 import { SearchAuto } from '../pages/SearchAuto/SearchAuto'
@@ -8,6 +8,7 @@ import { AboutUs } from '../pages/AboutUs/AboutUs'
 import { Home } from '../pages/Home/Home'
 
 export const Routing = () => {
+ 
   return (
     <Routes>
         <Route path='/' element={<Home/>}/>
@@ -16,6 +17,7 @@ export const Routing = () => {
         <Route path='/MyCars' element={<MyCars/>}/>
         <Route path='/MyOrders' element={<MyOrders/>}/>
         <Route path='/AboutUs' element={<AboutUs/>}/>
+      
     </Routes>
   )
 }
