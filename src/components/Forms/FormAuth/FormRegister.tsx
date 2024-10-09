@@ -24,15 +24,15 @@ export const FormRegister = () => {
     <form className={styles.formContain} onSubmit={handleSubmit(submit)}>
     <div>
       <label htmlFor="login">Логин</label>
-      <input type="text" {...register('username', {required: true})} name='login' placeholder='Введите логин'/>
+      <input type="text" {...register('username', {required: true})}  placeholder='Введите логин'/>
       </div>
       <div>
       <label htmlFor="phone">Телефон</label>
-      <input type="number" {...register('phone', {required: true})} name='phone' placeholder='+7***-**-**'/>
+      <input type="number" {...register('phone', {required: true})}  placeholder='+7***-**-**'/>
       </div>
       <div>
         <label htmlFor="pass">Пароль</label>
-      <input type="password" {...register('password', {required: true})} name='pass' placeholder='Введите пароль'/>
+      <input type="password" {...register('password', {required: true})}  placeholder='Введите пароль'/>
       </div>
       <button>Зарегистрироваться</button>
      
